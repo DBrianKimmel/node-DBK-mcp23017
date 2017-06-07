@@ -1,6 +1,27 @@
 node-mcp23017
 =============
 
+### DBK Notes:
+==============
+2017-06-06 (my 76th birthday)
+
+This module did not compile on my Raspberry Pi running 2017-04-10-raspbian-jessie-lite.img
+
+sudo apt install npm
+sudo apt install nodered  # outdated
+​sudo update-nodejs-and-nodered  # Updates these
+sudo apt install i2c-tools
+npm install i2c # as user "pi"
+npm install i2c-bus
+npm install node-mcp23017 --save
+...Fails!
+
+
+
+
+### END DBK Notes
+=================
+
 Node.js library for the I2C I/O Expander MCP23017 on a Raspberry Pi
 
 It currently only supports reading from and writing to the chip
@@ -20,9 +41,9 @@ npm install node-mcp23017 --save
 In order to use this module with the Raspberry Pi running Raspbian you have to enable to stuff
 
 
-````bash
+--bash
 $ sudo vi /etc/modules
-````
+
 
 Add these two lines
 

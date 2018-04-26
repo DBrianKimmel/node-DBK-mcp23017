@@ -7,6 +7,7 @@ node-mcp23017
 
 This module did not compile on my Raspberry Pi running 2017-04-10-raspbian-jessie-lite.img
 
+````bash
 sudo apt install npm
 sudo apt install nodered  # outdated
 ​sudo update-nodejs-and-nodered  # Updates these
@@ -15,6 +16,7 @@ npm install i2c # as user "pi"
 npm install i2c-bus
 npm install node-mcp23017 --save
 ...Fails!
+````
 
 
 
@@ -34,7 +36,7 @@ install via npm. just type the following in the terminal/console
 
 ````bash
 npm install node-mcp23017 --save
-```
+````
 
 ## Raspberry Pi Setup
 
